@@ -223,7 +223,7 @@ function App() {
       {last && (
         <>
           <section className="container firstPostulateAccounting">
-            <LineChart title="EDP" data={last} />
+            <LineChart title="Espectro de Densidad de Potencia" data={last} />
           </section>
           <section className="container buttons">
             <button className="button-reiniciar" onClick={handleReset}>
