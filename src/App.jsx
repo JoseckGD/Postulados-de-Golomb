@@ -25,9 +25,9 @@ function App() {
   const inputFile = useRef(null);
 
   const firstPostulate = () => {
-    const sequenceArray = sequence.split("");
-    for (let i = 0; i < sequenceArray.length; i++) {
-      sequenceArray[i] === "1" ? ones++ : zeros++;
+    const sequenceArray_ = sequence.split("");
+    for (let i = 0; i < sequenceArray_.length; i++) {
+      sequenceArray_[i] === "1" ? ones++ : zeros++;
     }
 
     setFirstPostulateAccounting({ 1: ones, 0: zeros });
@@ -63,7 +63,7 @@ function App() {
   };
 
   const performFFT = (data) => {
-    const dataSize = 2003; // Tamaño de los datos de entrada
+    const dataSize = data.length; // Tamaño de los datos de entrada
 
     // Función para calcular la siguiente potencia de dos
     const nextPowerOfTwo = (n) => {

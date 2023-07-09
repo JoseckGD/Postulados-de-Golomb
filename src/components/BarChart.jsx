@@ -75,7 +75,7 @@ const BarChart = ({ title, data }) => {
         },
       },
     });
-  }, []);
+  }, [title, data]);
 
   return <canvas ref={chartRef} />;
 };

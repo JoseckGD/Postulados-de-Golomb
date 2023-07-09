@@ -56,7 +56,7 @@ const LineChart = ({ title, data }) => {
         },
       },
     });
-  }, []);
+  }, [title, data]);
 
   return <canvas ref={lineChartRef} />;
 };
